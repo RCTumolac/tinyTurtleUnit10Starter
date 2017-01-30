@@ -13,6 +13,7 @@ function TinyTurtle(canvas) {
     // details on why we're offsetting by 0.5.
     x: canvas.width / 2 + 0.5,
     y: canvas.height / 2 + 0.5,
+    
   };
   var isPenDown = true;
   var radians = function(r) {return 2 * Math.PI * (r / 360) };
