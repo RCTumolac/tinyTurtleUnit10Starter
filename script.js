@@ -8,16 +8,16 @@ TinyTurtle.apply(window);
 
 var step = 1
 
-function square(){
-    forward(50);
+function square(x){
+    forward(x);
     right(90);
-    forward(50);
+    forward(x);
     right(90);
-    forward(50);
+    forward(x);
     right(90);
-    forward(50);
+    forward(x);
     right(90);
-    forward(50);
+    forward(x);
 }
 
 function triangle(){
@@ -47,18 +47,39 @@ function HOUSE(){
 
 function circle(){
    var step;
-    for (step = 0; step < 2; step++) {
-        // Runs 5 times, with values of step 0 through 4.
+    for (step = 0; step < 10; step++) {
         right(15);
         forward(10);
         step -= 1
         }
     }
+    
+    
+    
+function shape(size, angle){
+    right(angle);
+    forward(size);
+    right(angle);
+    forward(size);
+    right(angle);
+    forward(size);
+    right(angle);
+    forward(size);
+    right(angle);
+    forward(size);
+    right(angle);
+    forward(size);
+    right(angle);
+    forward(size);
+    right(angle);
+    forward(size);
+}
 
 // Type your function call below
 
 //triangle();
-//square();
+//square(10);
 //HOUSE();
-circle();
+//circle();
+shape(20, 50);
 stamp();
