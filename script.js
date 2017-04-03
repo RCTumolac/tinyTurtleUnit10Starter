@@ -3,6 +3,10 @@
 /* global right */
 /* global stamp */
 /* global HOUSE */
+/* global x */
+/* global y */
+/* global a */
+/* global b */
 
 TinyTurtle.apply(window);
 
@@ -75,11 +79,43 @@ function shape(size, angle){
     forward(size);
 }
 
-// Type your function call below
+function hexagon(){
+    for(var i = 0; i < 6; i += 1){
+        forward(50);
+        right(72);
+    }
+    //right(30);
+    //forward(80);
+};
+
+//-------------------------------- ART ----------------------------------------//
+
+function art(x = Math.ceil(Math.random() * 100) , y = Math.ceil(Math.random() * 100)){
+    
+    console.log(x);
+    console.log(y);
+    
+    function art2(a = Math.ceil(Math.random() * 100), b = Math.ceil(Math.random() * 100)){
+    console.log(a);
+    console.log(b);
+        for(var i = 0; i < x; i += 1){
+            forward(a);
+            right(b);
+        }
+        right(a * b);
+    }
+    for(var i = 0; i < y; i += 1){
+            art2();
+        }
+    
+}
+// Type your function call below ---------------------------------------------//
 
 //triangle();
 //square(10);
 //HOUSE();
 //circle();
-shape(20, 50);
+//shape(30, 50);
+//hexagon();
+art();
 stamp();
